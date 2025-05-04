@@ -2,7 +2,7 @@ import os
 
 import time
 
-user = ["Ritesh","user2","user3"]
+user = ["user1","user2","user3"]
 
 pswd = [150907,200109,190512]
 
