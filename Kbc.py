@@ -29,7 +29,7 @@ def game():
 
     correct=0
 
-    incorrect=0
+    # incorrect=0
 
     while i<len(questions):
 
@@ -50,14 +50,12 @@ def game():
             i=i+1
 
         else:
+            print("Wrong answer!!!\nGame Ended!!!")
+            break
 
-            incorrect=incorrect+1
+    print("Your overall journey is:",str(int(correct)*10)+"%,",correct,"Correct.")
 
-            i=i+1
-
-    print("Your Overall Result is:",str(int(correct)*10)+"%,",correct,"Correct and",incorrect,"Incorrect")
-
-    obj.write("Total Correct Answers: "+str(correct)+"\nTotal Incorrect: "+ str(incorrect))
+    obj.write("Total Correct Answers: "+str(correct))
 
     obj.write("\nTotal Prize Earned: ₹"+str(balance))
 
